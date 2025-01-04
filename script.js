@@ -31,5 +31,5 @@ function displayTime() {
     min.style.transform = `rotate(${mRotation}deg)`;
     sec.style.transform = `rotate(${sRotation}deg)`;
 
-    realTimedata.innerText = `Time: ${hh}h ${mm}m ${ss}s`;
+    realTimedata.innerText = `Time: ${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}`;
 }
