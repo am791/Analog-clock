@@ -41,6 +41,7 @@ body {
     animation: spin 2s linear infinite;
     transform: translate(-50%, -50%);
 }
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -52,11 +53,43 @@ body {
     position: relative;
 }
 
+.header {
+    text-align: center;
+    align-content: center;
+    height: 20vh;
+}
+
+.time-zone-dropdown {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--clock-background);
+    color: var(--text-color);
+    padding: 5px 10px;
+    font-weight: normal;
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    cursor:pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.time-zone-dropdown:hover {
+    border-color: var(--text-color);
+}
+  
+.time-zone-dropdown:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+
 .text {
     font-weight: bold;
     text-align: center;
     align-content: center;
-    font-family: var(--font-family);
     height: 10vh;
 }
 
